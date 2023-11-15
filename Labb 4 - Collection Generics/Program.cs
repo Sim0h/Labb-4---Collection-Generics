@@ -106,14 +106,14 @@
             Console.WriteLine("-----------------------------------------");
 
 
-            Console.WriteLine("Find method:");
+            Console.WriteLine("Find male method:");
             Employee MaleEmployee = employees.Find(e => e.Gender == "Male");
             Console.WriteLine($"ID: {MaleEmployee.ID} - Name: {MaleEmployee.Name} - Gender: {MaleEmployee.Gender} - Salary: {MaleEmployee.Salary}");
 
 
             Console.WriteLine("-----------------------------------------");
 
-            Console.WriteLine("FindAll method");
+            Console.WriteLine("Find All males method");
             List<Employee> AllMaleEmployees = employees.FindAll(e => e.Gender == "Male");
             foreach (Employee emp in AllMaleEmployees)
             {
